@@ -23,11 +23,11 @@ public class Main {
 
                 toyFile.createNewFile();
 
-                shop.add(new Toy(1, "Кукла Барби", 5, 10));
+                shop.add(new Toy(1, "Барби", 5, 10));
 
-                shop.add(new Toy(2, "Машинка Хот Вилс", 15, 10));
+                shop.add(new Toy(2, "Машинка", 15, 10));
 
-                shop.add(new Toy(3, "Мишка Тедди", 3, 10));
+                shop.add(new Toy(3, "Тедди", 3, 10));
 
                 shop.saveToFile(FILENAME);
 
@@ -37,7 +37,7 @@ public class Main {
 
             }
 
-            shop.setWeight(3, 30); // изменить вес куклы Барби на 30%
+            shop.setWeight(3, 30); // изменить вес Тедди на 30%
 
             ArrayList<String> toyList = shop.getToyList(); // получить список игрушек в магазине
 
